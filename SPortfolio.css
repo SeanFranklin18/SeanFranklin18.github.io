@@ -1,0 +1,939 @@
+											/*BACKGROUND COLOUR HAS HAD THE "b" removed*/
+											/* applies to everything */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	ackground-color: ;
+}
+html {
+	font-size: 16px;
+}
+
+											/* applies to the body */
+body {
+	ackground-color: #0d101b;
+	/*seans background colour just add the #*/
+	background-color: #FFFFFF;
+}
+
+											/* changing the font of the website */
+body, h1,h2,h3,h4,h5,h6,p,a {
+	font-family: "Raleway";
+	color:  #034694;
+	/*f8f8ff*/
+}
+h1,h2,h3,h4,h5,h6,p {
+	background-color: ;
+}
+											/* applies to the container that contains the sections 
+											also applies the snap scrolling to the website*/
+
+/* All has been built for a mobile screen width:360 */
+
+/* Navigation Bar Needs to be redone*/
+.Nav {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+  min-width: 100%;
+}
+
+.Nav .SF {
+	background-color: #034694;
+	display: flex;
+  min-width: 2rem;
+  min-height: 2rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+}
+.Nav .SF p{
+	color: #FFFFFF;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+
+.TopBar {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+/* Style navigation menu links */
+.TopBar #Links {
+	display: none;
+	margin: 0 auto;
+}
+.TopBar .SF {
+	background-color: #034694;
+	display: none;
+  min-width: 2rem;
+  min-height: 2rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+}
+.TopBar .SF p{
+	color: #FFFFFF;
+}
+.TopBar .Links {
+  flex-direction: column;
+  align-items: center;
+	text-align: center;
+}
+.TopBar .Links a {
+  color: #034694;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/* Style the hamburger menu */
+
+
+/* Add a grey background color on mouse-over */
+.TopBar .Links a:hover{
+  background-color: #034694;
+}
+
+/* Style the active link (or home/logo) */
+.Active {
+  background-color: #1AA1DB;
+  color: white;
+  font-size: 2rem;
+}
+
+/*
+rgb(255, 82, 119) pink #ff5277
+rgb(46, 48, 73) dark blue #2e3049
+rgb(196, 196, 213) light gray #c4c4d5
+rgb(107, 111, 152) blue gray #6b6f98
+																						/*topbar section*/
+.TopBar {
+	display: flex;
+	justify-content: space-between;
+}
+																						/*hero section*/
+.Hero {
+	ackground-color: dimgray;
+	max-width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	padding: 0rem 1rem 1rem 1rem;
+
+}
+
+#Home {
+
+}
+
+.Sub {
+	ackground-color: green;
+	min-width: 100%;
+	text-align: center;
+  padding: 0rem 1rem 1rem 1rem;
+
+}
+
+.Buttons {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	ackground-color: yellow;
+}
+
+.Buttons a {
+	color: ghostwhite;
+	text-decoration: none;
+	/*sean colour*/
+	background-color: #034694;
+	width: 75%;
+	max-width: 1000px;
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 1rem 1rem 1rem 1rem;
+
+
+}
+.Geo {
+	display: none;
+}
+
+																				/*About section*/
+.About {
+	ackground-color: blueviolet;
+	text-align: center;
+	padding: 1rem 1rem 0rem 1rem;
+}
+
+.Info{
+	ackground-color: orange;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+.Info .ProfilePic {
+		width: 60%;
+}
+.Info .InfoText {
+	width: 75%;
+	padding: 1rem 0rem 0rem 0rem;
+
+}
+
+																			/*portfolio section*/
+.Portfolio {
+	ackground-color: darkred;
+	text-align: center;
+	padding: 1rem 1rem 1rem 1rem;
+}
+																			/*everything except create scroll disabled*/
+
+.CreateScroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem 1rem 1rem 1rem;
+  border-style: solid;
+  border-color: #1AA1DB;
+  border-radius: 7px;
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: #FFFFFF00;
+  border-width: 0.2rem;
+}
+
+.card {
+	flex: 0 0 auto;
+	padding: 0rem 1rem 0rem 1rem;
+}
+
+																/*Contact section*/
+.Contact {
+	ackground-color: crimson;
+	text-align: center;
+	padding: 1rem 1rem 1rem 1rem;
+}
+.ContactSub {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0rem 1rem 1rem 1rem;
+}
+.ContactSub p {
+	width: 75%;
+}
+.DropDown {
+	ackground-color: darkseagreen;
+	text-align: left;
+	padding: 0rem 1rem 1rem 1rem
+}
+.DropDown details{
+	ackground-color: darkseagreen;
+	text-align: left;
+	margin: 1rem 1rem 1rem 1rem;		
+	font-size: 1.5rem;
+  background-color: #DBA111;
+}
+.DropDown summary{
+	ackground-color: darkseagreen;
+	text-align: left;
+	margin: 0rem 1rem 0rem 1rem;		
+	font-size: 1.5rem;
+  background-color: #DBA111;
+}
+.DropDown p{
+	ackground-color: darkseagreen;
+	text-align: left;
+	padding: 1rem 1rem 1rem 1rem;		
+	font-size: 1rem;
+  background-color: #DBA111;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.ContactInfo {
+	display: none;
+}
+.ContactCard {
+
+}
+.ContactIcons {
+}
+
+
+
+/*different size browser area*/
+
+
+
+
+
+																																/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.Nav {
+  	overflow: hidden;
+  	position: relative;
+  	display: flex;
+  	justify-content: space-between;
+  	padding: 1rem 1rem 1rem 1rem;
+  	min-width: 100%;
+	}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+
+	.TopBar {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+	/* Style navigation menu links */
+	.TopBar #Links {
+		display: none;
+		margin: 0 auto;
+	}
+	.TopBar .Links {
+	  flex-direction: column;
+	  align-items: center;
+		text-align: center;
+	}
+	.TopBar .Links a {
+	  color: #FFFFFF;
+	  padding: 1rem 1rem 1rem 1rem;
+	}
+
+	/* Style the hamburger menu */
+	.Nav .SF{
+		color: #FFFFFF;
+	}
+	/* Style the active link (or home/logo) */
+	.Active {
+	  background-color: #1AA1DB;
+	  color: white;
+	  font-size: 2rem;
+	}
+	.TopBar .Links a:hover{
+  	background-color: #034694;
+	}
+	/*
+	rgb(255, 82, 119) pink #ff5277
+	rgb(46, 48, 73) dark blue #2e3049
+	rgb(196, 196, 213) light gray #c4c4d5
+	rgb(107, 111, 152) blue gray #6b6f98
+																							/*topbar section*/
+	.TopBar {
+		display: flex;
+		justify-content: space-between;
+	}
+																							/*hero section*/
+	.Hero {
+		ackground-color: dimgray;
+		max-width: 100%;
+		text-align: center;
+		font-size: 2rem;
+		padding: 0rem 1rem 1rem 1rem;
+
+	}
+
+	#Home {
+		color: #FFFFFF;
+		text-shadow: -2px 2px #034694;
+	}
+
+	.Sub {
+		ackground-color: green;
+		min-width: 100%;
+		text-align: center;
+	  padding: 0rem 1rem 1rem 1rem;
+		text-shadow: -1px 1px #FFFFFF;
+	}
+
+	.Buttons {
+		font-size: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		ackground-color: yellow;
+	}
+
+	.Buttons a {
+		color: ghostwhite;
+		text-decoration: none;
+		ackground-color: #1AA1DB;
+		width: 75%;
+		max-width: 1000px;
+		padding: 1rem 1rem 1rem 1rem;
+		margin: 1rem 1rem 1rem 1rem;
+
+
+	}
+	.Gradient {
+		background-image: linear-gradient(to right, #03469400, #034694);
+		min-height: 70vh;
+	}
+
+																					/*About section*/
+	.About {
+		ackground-color: blueviolet;
+		text-align: center;
+		padding: 1rem 1rem 0rem 1rem;
+	}
+
+	.Info{
+		ackground-color: orange;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.Info .ProfilePic {
+			width: 60%;
+	}
+	.Info .InfoText {
+		width: 75%;
+		padding: 1rem 0rem 0rem 0rem;
+
+	}
+
+																				/*portfolio section*/
+	.Portfolio {
+		ackground-color: darkred;
+		text-align: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+																				/*everything except create scroll disabled*/
+	
+	.CreateScroll {
+	  display: flex;
+	  flex-wrap: nowrap;
+	  overflow-x: auto;
+	  padding: 1rem 1rem 1rem 1rem;
+    border-style: solid;
+    border-color: #1AA1DB;
+    border-radius: 7px;
+    margin: 1rem 1rem 1rem 1rem;
+    background-color: #FFFFFF00;
+    border-width: 0.2rem;
+	}
+
+	.card {
+		flex: 0 0 auto;
+		padding: 0rem 1rem 0rem 1rem;
+	}
+
+																	/*Contact section*/
+	.Contact {
+		ackground-color: crimson;
+		text-align: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.ContactSub {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0rem 1rem 1rem 1rem;
+	}
+	.ContactSub p {
+		width: 75%;
+	}
+	.DropDown {
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 0rem 1rem 1rem 1rem
+	}
+	.DropDown details{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 1rem 1rem 1rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #034694;
+	}
+	.DropDown summary{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 0rem 1rem 0rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #034694;
+	  color: #FFFFFF;
+	}
+	.DropDown p{
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 1rem 1rem 1rem 1rem;		
+		font-size: 1rem;
+	  background-color: #034694;
+	  color: #FFFFFF;
+	  word-wrap: break-word;
+	  width: 100%;
+	}
+
+}
+
+																												/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.Nav {
+  	overflow: hidden;
+  	position: relative;
+  	display: flex;
+  	justify-content: space-between;
+  	padding: 1rem 1rem 1rem 1rem;
+  	min-width: 100%;
+	}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+
+	.TopBar {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+	/* Style navigation menu links */
+	.TopBar #Links {
+		display: none;
+		margin: 0 auto;
+	}
+	.TopBar .Links {
+	  flex-direction: column;
+	  align-items: center;
+		text-align: center;
+	}
+	.TopBar .Links a {
+	  color: #FFFFFF;
+	  padding: 1rem 1rem 1rem 1rem;
+	}
+
+	/* Style the hamburger menu */
+	.Nav .SF{
+		color: #FFFFFF;
+	}
+
+	/* Add a grey background color on mouse-over */
+
+	/* Style the active link (or home/logo) */
+	.Active {
+	  background-color: #1AA1DB;
+	  color: white;
+	  font-size: 2rem;
+	}
+
+	/*
+	rgb(255, 82, 119) pink #ff5277
+	rgb(46, 48, 73) dark blue #2e3049
+	rgb(196, 196, 213) light gray #c4c4d5
+	rgb(107, 111, 152) blue gray #6b6f98
+																							/*topbar section*/
+	.TopBar {
+		display: flex;
+		justify-content: space-between;
+	}
+																							/*hero section*/
+	.Hero {
+		ackground-color: dimgray;
+		max-width: 100%;
+		text-align: center;
+		font-size: 2rem;
+		padding: 0rem 1rem 1rem 1rem;
+
+	}
+
+	#Home {
+		color: #FFFFFF;
+		text-shadow: -2px 2px #034694;
+	}
+
+	.Sub {
+		ackground-color: green;
+		min-width: 100%;
+		text-align: center;
+	  padding: 0rem 1rem 1rem 1rem;
+
+	}
+
+	.Buttons {
+		font-size: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		ackground-color: yellow;
+	}
+
+	.Buttons a {
+		color: ghostwhite;
+		text-decoration: none;
+		ackground-color: #1AA1DB;
+		width: 75%;
+		max-width: 1000px;
+		padding: 1rem 1rem 1rem 1rem;
+		margin: 1rem 1rem 1rem 1rem;
+
+
+	}
+	.Gradient {
+		background-image: linear-gradient(to right, #03469400, #034694);
+		min-height: 70vh;
+	}
+
+																					/*About section*/
+	.About {
+		ackground-color: blueviolet;
+		text-align: center;
+		padding: 1rem 1rem 0rem 1rem;
+	}
+
+	.Info{
+		ackground-color: orange;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.Info .ProfilePic {
+			width: 60%;
+	}
+	.Info .InfoText {
+		width: 75%;
+		padding: 1rem 0rem 0rem 0rem;
+
+	}
+
+																				/*portfolio section*/
+	.Portfolio {
+		ackground-color: darkred;
+		text-align: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+																				/*everything except create scroll disabled*/
+	.CreateScroll {
+	  display: flex;
+	  flex-wrap: nowrap;
+	  overflow-x: auto;
+	  padding: 1rem 1rem 1rem 1rem;
+	  border-style: solid;
+    border-color: #1AA1DB;
+    border-radius: 7px;
+    margin: 1rem 1rem 1rem 1rem;
+    background-color: #FFFFFF00;
+    border-width: 0.2rem;
+	}
+
+	.card {
+		flex: 0 0 auto;
+		padding: 0rem 1rem 0rem 1rem;
+	}
+
+																	/*Contact section*/
+	.Contact {
+		ackground-color: crimson;
+		text-align: center;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.ContactSub {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0rem 1rem 1rem 1rem;
+	}
+	.ContactSub p {
+		width: 75%;
+	}
+	.DropDown {
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 0rem 1rem 1rem 1rem
+	}
+	.DropDown details{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 1rem 1rem 1rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #034694;
+	}
+	.DropDown summary{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 0rem 1rem 0rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #034694;
+	  color: #FFFFFF;
+	}
+	.DropDown p{
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 1rem 1rem 1rem 1rem;		
+		font-size: 1rem;
+	  background-color: #034694;
+	  word-wrap: break-word;
+	  width: 100%;
+	  color: #FFFFFF;
+	}
+
+}
+
+																																	/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+		.Nav {
+		display: none;
+	}
+	.TopBar {
+		display: flex;
+		text-align: left;
+		align-items: flex-start;
+	}
+	.TopBar .SF {
+		background-color: #034694;
+		display: flex;
+    min-width: 2rem;
+    min-height: 2rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+	}
+		.TopBar .SF p{
+		color: #FFFFFF;
+	}
+	.TopBar #Links {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: flex-end;
+	}
+	.TopBar .Links {
+	  flex-direction: column;
+	  align-items: center;
+		text-align: center;
+	}
+	.TopBar .Links a {
+	  color: white;
+	  padding: 1rem 1rem 1rem 1rem;
+	  margin: 0rem 0rem 0rem 6rem;
+	  font-size: 1.5rem;
+	}
+	.Hero {
+		ackground-color: dimgray;
+		max-width: 100%;
+		text-align: left;
+		font-size: 4rem;
+		padding: 6rem 1rem 1rem 3rem;
+		line-height: 8rem;
+	}
+
+	#Home {
+		max-width: 50%;
+		color: #FFFFFF;
+		text-shadow: -2px 2px #034694;
+	}
+
+	.Sub {
+		ackground-color: green;
+		min-width: 100%;
+		text-align: left;
+  	padding: 0rem 1rem 1rem 3rem;
+  	font-size: 1.5rem;
+	}
+
+	.Buttons {
+		font-size: 1.5rem;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		text-align: center;
+		ackground-color: yellow;
+		padding: 0rem 0rem 0rem 2rem;
+	}	
+
+	.Buttons a {
+		color: ghostwhite;
+		text-decoration: none;
+		ackground-color: #1AA1DB;
+		width: 75%;
+		max-width: 300px;
+		padding: 1rem 1rem 1rem 1rem;
+		margin: 1rem 1rem 1rem 1rem;
+	}
+
+	.Gradient {
+		background-image: linear-gradient(to right, #03469400, #034694);
+		min-height: 100vh;
+	}
+
+																				/*About section*/
+	.About {
+		ackground-color: blueviolet;
+		text-align: left;
+		padding: 1rem 0rem 0rem 3rem;
+		font-size: 2.5rem;
+	}
+
+	.Info{
+		display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0rem 0rem 0rem 3rem;
+	}
+
+	.Info .ProfilePic {
+    max-width: 50%;
+    float: left;
+    background-color: #034694;
+    height: 250px;
+	}
+
+	.Info .InfoText {
+		width: 50%;
+    padding: 0rem 0rem 0rem 0rem;
+    float: left;
+    text-align: left;
+    font-size: 1.7rem;
+	}
+
+																			/*portfolio section*/
+	.Portfolio {
+		ackground-color: darkred;
+		text-align: left;
+		padding: 2rem 0rem 1rem 3rem;
+		font-size: 2.5rem;
+	}
+																			/*everything except create scroll disabled*/
+	.CreateScroll {
+	  display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 1rem 3rem;
+    border-style: solid;
+    border-color: #1AA1DB;
+    border-radius: 7px;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #FFFFFF00;
+    border-width: 0.2rem;
+	}
+
+	.card {
+		flex: 0 0 auto;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+																	/*Contact section*/
+	.Contact {
+		ackground-color: crimson;
+		text-align: left;
+		padding: 2rem 1rem 1rem 3rem;
+		font-size: 2.5rem;
+	}
+	.ContactSub {
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0rem 1rem 1rem 3rem;
+		font-size: 1.5rem;
+	}
+	.ContactSub p {
+		width: 50%;
+	}
+	.DropDown {
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 0rem 1rem 1rem 2rem;
+		display: none;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.DropDown details{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 1rem 1rem 1rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #1AA1DB;
+	  min-width: 200px;
+	}
+	.DropDown summary{
+		ackground-color: darkseagreen;
+		text-align: left;
+		margin: 0rem 1rem 0rem 1rem;		
+		font-size: 1.5rem;
+	  background-color: #1AA1DB;
+	  min-width: 200px;
+	}
+	.DropDown p{
+		ackground-color: darkseagreen;
+		text-align: left;
+		padding: 1rem 1rem 1rem 1rem;		
+		font-size: 1rem;
+	  background-color: #1AA1DB;
+	  word-wrap: break-word;
+	}
+	.ContactInfo {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-around;
+		padding: 1rem 1rem 1rem 1rem;	
+		flex-wrap: wrap;
+	}
+	.ContactCard {
+		background: #FFFFFF00;
+    padding: 0rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    min-width: calc(20%);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    border-style: solid;
+    border-color: #1AA1DB;
+    border-radius: 0.2rem;
+		
+	}
+	.ContactIcons {
+		font-size: 2rem;
+		background-color: #034694;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px !important;
+		border-radius: 50%;
+		transition: 0.3s linear;
+		color: #FFFFFF;
+	}
+	.ContactCard:hover .ContactIcons{
+		background: none;
+		color: #0d101b;
+		transform: scale(1.6);
+	}
+	.ContactCard p,a {
+		opacity: 0;
+		transition: 0.3s linear;
+		white-space: normal;
+	}
+	.ContactCard:hover p,a {
+		opacity: 1;
+		padding: 1rem 0rem 0rem 0rem;
+
+	}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
