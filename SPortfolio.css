@@ -1,3 +1,10 @@
+/*Made by Jack Alexander Quigley*/
+											/* main things to add to my own portfolio from this one: 
+											better layout
+											word-break break-word on all text so that when text is too large for screen it will shrink 
+											adding a border to my portfolio area
+											taking all of the top/nav bar html and CSS
+											taking the contact boxes and make them columns for smaller devices*/
 											/*BACKGROUND COLOUR HAS HAD THE "b" removed*/
 											/* applies to everything */
 * {
@@ -22,6 +29,7 @@ body, h1,h2,h3,h4,h5,h6,p,a {
 	font-family: "Raleway";
 	color:  #034694;
 	/*f8f8ff*/
+	word-break: break-word;
 }
 h1,h2,h3,h4,h5,h6,p {
 	background-color: ;
@@ -233,7 +241,8 @@ rgb(107, 111, 152) blue gray #6b6f98
 .DropDown {
 	ackground-color: darkseagreen;
 	text-align: left;
-	padding: 0rem 1rem 1rem 1rem
+	padding: 0rem 1rem 1rem 1rem;
+	display: none;
 }
 .DropDown details{
 	ackground-color: darkseagreen;
@@ -260,12 +269,55 @@ rgb(107, 111, 152) blue gray #6b6f98
 }
 
 .ContactInfo {
-	display: none;
+	display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center
 }
 .ContactCard {
-
+	background: #FFFFFF00;
+  padding: 0rem 1rem 0rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+  min-width: calc(100%);  
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  border-style: solid;
+  border-color: #1AA1DB;
+  border-radius: 0.2rem;
+	
 }
 .ContactIcons {
+	font-size: 2rem;
+	background-color: #034694;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius: 50%;
+	transition: 0.3s linear;
+	color: #FFFFFF;
+}
+.ContactCard:hover .ContactIcons{
+	background: none;
+	color: #0d101b;
+	transform: scale(1.6);
+}
+.ContactCard p,a {
+	opacity: 0;
+	transition: 0.3s linear;
+	white-space: normal;
+}
+.ContactCard:hover p,a {
+	opacity: 1;
+	padding: 1rem 0rem 0rem 0rem;
+
 }
 
 
@@ -273,7 +325,11 @@ rgb(107, 111, 152) blue gray #6b6f98
 /*different size browser area*/
 
 
-
+@media only screen and (max-width: 260px) {
+	#Home{
+		font-size: 2.5rem;
+	}
+}
 
 
 																																/* Extra small devices (phones, 600px and down) */
@@ -347,6 +403,7 @@ rgb(107, 111, 152) blue gray #6b6f98
 	#Home {
 		color: #FFFFFF;
 		text-shadow: -2px 2px #034694;
+		word-break: break-word;
 	}
 
 	.Sub {
@@ -741,6 +798,7 @@ rgb(107, 111, 152) blue gray #6b6f98
 		max-width: 50%;
 		color: #FFFFFF;
 		text-shadow: -2px 2px #034694;
+		word-break: initial;
 	}
 
 	.Sub {
@@ -889,6 +947,7 @@ rgb(107, 111, 152) blue gray #6b6f98
 		justify-content: space-around;
 		padding: 1rem 1rem 1rem 1rem;	
 		flex-wrap: wrap;
+		flex-direction: row;
 	}
 	.ContactCard {
 		background: #FFFFFF00;

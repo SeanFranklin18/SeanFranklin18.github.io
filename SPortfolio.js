@@ -1,3 +1,4 @@
+/*Made By Jack Alexander Quigley*/
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 /* add a statement that makes it so when the browser size reaches a certain size the links are displayed as flex*/
 function myFunction() {
